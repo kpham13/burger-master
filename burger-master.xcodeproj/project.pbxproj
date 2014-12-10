@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		0A18C1461A38F222008B2DC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18C1451A38F222008B2DC9 /* main.m */; };
 		0A18C1491A38F222008B2DC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18C1481A38F222008B2DC9 /* AppDelegate.m */; };
-		0A18C14C1A38F222008B2DC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18C14B1A38F222008B2DC9 /* ViewController.m */; };
 		0A18C14F1A38F222008B2DC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A18C14D1A38F222008B2DC9 /* Main.storyboard */; };
 		0A18C1511A38F222008B2DC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A18C1501A38F222008B2DC9 /* Images.xcassets */; };
 		0A18C1541A38F222008B2DC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A18C1521A38F222008B2DC9 /* LaunchScreen.xib */; };
 		0A18C1601A38F223008B2DC9 /* burger_masterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18C15F1A38F223008B2DC9 /* burger_masterTests.m */; };
+		0A18C16F1A38F73E008B2DC9 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A18C16E1A38F73E008B2DC9 /* burger.png */; };
+		0A18C1721A38F91F008B2DC9 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18C1711A38F91F008B2DC9 /* MenuViewController.m */; };
+		0A18C1751A38F929008B2DC9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A18C1741A38F929008B2DC9 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,17 @@
 		0A18C1451A38F222008B2DC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A18C1471A38F222008B2DC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A18C1481A38F222008B2DC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A18C14A1A38F222008B2DC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A18C14B1A38F222008B2DC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0A18C14E1A38F222008B2DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A18C1501A38F222008B2DC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0A18C1531A38F222008B2DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0A18C1591A38F222008B2DC9 /* burger-masterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "burger-masterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A18C15E1A38F223008B2DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A18C15F1A38F223008B2DC9 /* burger_masterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = burger_masterTests.m; sourceTree = "<group>"; };
+		0A18C16E1A38F73E008B2DC9 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
+		0A18C1701A38F91F008B2DC9 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		0A18C1711A38F91F008B2DC9 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		0A18C1731A38F929008B2DC9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0A18C1741A38F929008B2DC9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +91,7 @@
 				0A18C16B1A38F2A9008B2DC9 /* Controllers */,
 				0A18C1471A38F222008B2DC9 /* AppDelegate.h */,
 				0A18C1481A38F222008B2DC9 /* AppDelegate.m */,
-				0A18C14A1A38F222008B2DC9 /* ViewController.h */,
-				0A18C14B1A38F222008B2DC9 /* ViewController.m */,
-				0A18C14D1A38F222008B2DC9 /* Main.storyboard */,
 				0A18C1501A38F222008B2DC9 /* Images.xcassets */,
-				0A18C1521A38F222008B2DC9 /* LaunchScreen.xib */,
 				0A18C1431A38F222008B2DC9 /* Supporting Files */,
 			);
 			path = "burger-master";
@@ -99,6 +100,7 @@
 		0A18C1431A38F222008B2DC9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A18C16E1A38F73E008B2DC9 /* burger.png */,
 				0A18C1441A38F222008B2DC9 /* Info.plist */,
 				0A18C1451A38F222008B2DC9 /* main.m */,
 			);
@@ -132,6 +134,8 @@
 		0A18C16A1A38F2A5008B2DC9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A18C14D1A38F222008B2DC9 /* Main.storyboard */,
+				0A18C1521A38F222008B2DC9 /* LaunchScreen.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -139,6 +143,10 @@
 		0A18C16B1A38F2A9008B2DC9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0A18C1701A38F91F008B2DC9 /* MenuViewController.h */,
+				0A18C1711A38F91F008B2DC9 /* MenuViewController.m */,
+				0A18C1731A38F929008B2DC9 /* MainViewController.h */,
+				0A18C1741A38F929008B2DC9 /* MainViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A18C16F1A38F73E008B2DC9 /* burger.png in Resources */,
 				0A18C14F1A38F222008B2DC9 /* Main.storyboard in Resources */,
 				0A18C1541A38F222008B2DC9 /* LaunchScreen.xib in Resources */,
 				0A18C1511A38F222008B2DC9 /* Images.xcassets in Resources */,
@@ -243,9 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A18C14C1A38F222008B2DC9 /* ViewController.m in Sources */,
 				0A18C1491A38F222008B2DC9 /* AppDelegate.m in Sources */,
 				0A18C1461A38F222008B2DC9 /* main.m in Sources */,
+				0A18C1751A38F929008B2DC9 /* MainViewController.m in Sources */,
+				0A18C1721A38F91F008B2DC9 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MenuViewController.h
 //  burger-master
 //
 //  Created by Kevin Pham on 12/10/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end
-
