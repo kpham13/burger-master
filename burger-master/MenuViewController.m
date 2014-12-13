@@ -39,6 +39,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_mainViewController release];
+    [_tableView release];
+    [_menu release];
+    [super dealloc];
+}
+
 #pragma mark - TABLE VIEW DATA SOURCE
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -67,13 +74,6 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:true];
     
     // Instantiate view controllers based on menu item clicked
-}
-
-- (void)dealloc {
-    [_mainViewController release];
-    [_tableView release];
-    [_menu release];
-    [super dealloc];
 }
 
 @end

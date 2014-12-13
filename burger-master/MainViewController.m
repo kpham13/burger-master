@@ -31,6 +31,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_mainViewController release];
+    [_burgerButton release];
+    [super dealloc];
+}
+
 - (IBAction)didPressBurgerButton:(id)sender {
     // Animation for Burger Button
     if (self.burgerIsActive == NO) {
@@ -50,12 +56,6 @@
         
         self.burgerIsActive = NO;
     }
-}
-
-- (void)dealloc {
-    [_mainViewController release];
-    [_burgerButton release];
-    [super dealloc];
 }
 
 @end
