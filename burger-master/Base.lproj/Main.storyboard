@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM2-0h-Bfc">
-                                <rect key="frame" x="16" y="74" width="40" height="40"/>
+                                <rect key="frame" x="16" y="30" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="2oL-fR-sVE"/>
                                     <constraint firstAttribute="height" constant="40" id="NGh-6O-dHA"/>

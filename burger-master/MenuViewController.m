@@ -22,16 +22,10 @@
     [super viewDidLoad];
     
     self.menu = [[[NSArray alloc] initWithObjects:@"Home", @"Settings", @"Logout", nil] autorelease];
-    
-    self.mainViewController = [[self.storyboard instantiateViewControllerWithIdentifier:@"MAIN_VC"] autorelease];
-    [self addChildViewController:self.mainViewController];
-    self.mainViewController.view.frame = self.view.frame;
-    [self.view addSubview:self.mainViewController.view];
-    //[self.view insertSubview:self.mainViewController];
-    [self.mainViewController didMoveToParentViewController:self];
-    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    [self createMainViewController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,7 +40,26 @@
     [super dealloc];
 }
 
+#pragma mark - VIEW CONTROLLERS
+
+- (void)createMainViewController {
+    self.mainViewController = [[self.storyboard instantiateViewControllerWithIdentifier:@"MAIN_VC"] autorelease];
+    [self addChildViewController:self.mainViewController];
+    self.mainViewController.view.frame = self.view.frame;
+    [self.view addSubview:self.mainViewController.view];
+    //[self.view insertSubview:self.mainViewController];
+    [self.mainViewController didMoveToParentViewController:self];
+}
+
 #pragma mark - TABLE VIEW DATA SOURCE
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
+    
+    cell.textLabel.text = self.menu[indexPath.row];
+    
+    return cell;
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger rowNumber;
@@ -58,14 +71,6 @@
     }
     
     return rowNumber;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CELL" forIndexPath:indexPath];
-    
-    cell.textLabel.text = self.menu[indexPath.row];
-    
-    return cell;
 }
 
 #pragma mark - TABLE VIEW DELEGATE
